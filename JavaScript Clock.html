@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <title>My Clock</title>
+    <style>
+        body{
+            /* background: rgb(44, 39, 39);             */
+            background: url(data:image/jpeg;base64,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); 
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        
+        .clock{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: white;
+            font-size: 100px;
+            text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+            /* font-family: 'Orbitron', sans-serif; */
+            font-family: 'ds-digital';
+            padding: 7px 7px 7px 7px;
+        }
+    </style>
+</head>
+<body>
+    <div id="display" class="clock"></div>
+    <script type="text/javascript">
+        function showTime(){
+            var date = new Date;
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var session = "AM";
+
+            if(h==0)
+            {
+                h = 12;
+            }
+            if(h>12)
+            {
+                h = h - 12;
+                session = "PM"
+            }
+            if(h<10)
+            {
+                h = "0"+h;
+            }
+            if(m<10)
+            {
+                m = "0"+m;
+            }
+            if(s<10)
+            {
+                s = "0"+s;
+            }
+            var time = h+" : "+m+" : "+s+" "+session;
+            document.getElementById("display").innerText = time;
+            document.getElementById("display").textContent = time;
+            
+            setTimeout(showTime, 1000);
+        }
+        showTime();
+        //setInterval(showTime, 1000);
+    </script>
+</body>
+</html>
